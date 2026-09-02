@@ -3,14 +3,708 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"
+
+    <title>CSS Lab — Learn CSS Visually</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="box">1</div>
-    <div class="box">2</div>
-    <div class="box">3</div>
-    <div class="box">4</div>
-    <div class="box">5</div>
-</body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="logo">
+            <span class="logo-css">CSS</span>
+            <span>Lab</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#learn">Learn</a>
+            <a href="#examples">Examples</a>
+            <a href="#playground">Playground</a>
+            <a href="#cheatsheet">Cheatsheet</a>
+        </nav>
+
+        <button class="header-btn">Start Learning</button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                <span></span>
+                Interactive CSS Learning
+            </div>
+
+            <h1>
+                Learn CSS by
+                <strong>Seeing It.</strong>
+            </h1>
+
+            <p>
+                Explore CSS properties, understand how they work,
+                and see every change through real website-style demos.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#learn" class="btn primary">Start Learning →</a>
+                <a href="#examples" class="btn secondary">View Examples</a>
+            </div>
+
+        </div>
+
+
+        <!-- CSS Code Preview -->
+
+        <div class="code-window">
+
+            <div class="code-header">
+                <div class="window-buttons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span>style.css</span>
+            </div>
+
+            <pre><code><span class="selector">.card</span> {
+  <span class="property">display</span>: <span class="value">flex</span>;
+  <span class="property">padding</span>: <span class="value">24px</span>;
+  <span class="property">border-radius</span>: <span class="value">16px</span>;
+  <span class="property">background</span>: <span class="value">white</span>;
+  <span class="property">box-shadow</span>: <span class="value">0 10px 30px #0001</span>;
+}</code></pre>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= LEARNING AREA ================= -->
+
+    <section id="learn" class="learning-section">
+
+        <div class="section-heading">
+
+            <span class="section-label">CSS FUNDAMENTALS</span>
+
+            <h2>Learn CSS Properties</h2>
+
+            <p>
+                Select a topic and explore the code with a visual example.
+            </p>
+
+        </div>
+
+
+        <div class="learning-layout">
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <div class="sidebar-title">
+                    CSS Topics
+                </div>
+
+                <button class="topic active">
+                    <span>🎨</span>
+                    Colors
+                </button>
+
+                <button class="topic">
+                    <span>🔤</span>
+                    Typography
+                </button>
+
+                <button class="topic">
+                    <span>📦</span>
+                    Box Model
+                </button>
+
+                <button class="topic">
+                    <span>📐</span>
+                    Width & Height
+                </button>
+
+                <button class="topic">
+                    <span>↔️</span>
+                    Margin & Padding
+                </button>
+
+                <button class="topic">
+                    <span>🧩</span>
+                    Display
+                </button>
+
+                <button class="topic">
+                    <span>⚡</span>
+                    Flexbox
+                </button>
+
+                <button class="topic">
+                    <span>▦</span>
+                    CSS Grid
+                </button>
+
+                <button class="topic">
+                    <span>🌈</span>
+                    Backgrounds
+                </button>
+
+                <button class="topic">
+                    <span>✨</span>
+                    Shadows
+                </button>
+
+                <button class="topic">
+                    <span>🎬</span>
+                    Transitions
+                </button>
+
+                <button class="topic">
+                    <span>📱</span>
+                    Responsive CSS
+                </button>
+
+            </aside>
+
+
+
+            <!-- DEMO CONTENT -->
+
+            <main class="lesson">
+
+                <div class="lesson-header">
+
+                    <div>
+                        <span class="lesson-number">01</span>
+
+                        <h3>CSS Colors</h3>
+
+                        <p>
+                            Control the color of text and backgrounds.
+                        </p>
+                    </div>
+
+                    <span class="difficulty">
+                        Beginner
+                    </span>
+
+                </div>
+
+
+                <!-- CODE -->
+
+                <div class="editor">
+
+                    <div class="editor-top">
+
+                        <span>example.css</span>
+
+                        <button>Copy</button>
+
+                    </div>
+
+                    <div class="code">
+
+                        <div>
+                            <span class="line-number">1</span>
+                            <span class="selector">.color-demo</span> {
+                        </div>
+
+                        <div>
+                            <span class="line-number">2</span>
+                            &nbsp;&nbsp;
+                            <span class="property">color</span>:
+                            <span class="value">#ffffff</span>;
+                        </div>
+
+                        <div>
+                            <span class="line-number">3</span>
+                            &nbsp;&nbsp;
+                            <span class="property">background-color</span>:
+                            <span class="value">#2563eb</span>;
+                        </div>
+
+                        <div>
+                            <span class="line-number">4</span>
+                            }
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- LIVE DEMO -->
+
+                <div class="demo-container">
+
+                    <div class="demo-header">
+
+                        <div>
+                            <span class="live-dot"></span>
+                            Live Preview
+                        </div>
+
+                        <span>Browser</span>
+
+                    </div>
+
+
+                    <div class="browser">
+
+                        <div class="browser-bar">
+
+                            <span class="browser-circle"></span>
+                            <span class="browser-circle"></span>
+                            <span class="browser-circle"></span>
+
+                            <div class="address">
+                                csslab.local/demo
+                            </div>
+
+                        </div>
+
+
+                        <div class="website-demo">
+
+                            <div class="demo-nav">
+
+                                <strong>TechStore</strong>
+
+                                <div>
+                                    Home &nbsp;&nbsp;
+                                    Products &nbsp;&nbsp;
+                                    About
+                                </div>
+
+                                <button>Login</button>
+
+                            </div>
+
+
+                            <div class="demo-hero">
+
+                                <div>
+
+                                    <span class="small-label">
+                                        NEW COLLECTION
+                                    </span>
+
+                                    <h1>
+                                        Build Your
+                                        <span>Dream Setup</span>
+                                    </h1>
+
+                                    <p>
+                                        Discover modern technology
+                                        designed for your workspace.
+                                    </p>
+
+                                    <button class="shop-btn">
+                                        Shop Now →
+                                    </button>
+
+                                </div>
+
+
+                                <div class="product-card">
+
+                                    <div class="product-image">
+                                        💻
+                                    </div>
+
+                                    <h3>Pro Laptop</h3>
+
+                                    <p>৳89,999</p>
+
+                                    <button>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPLANATION -->
+
+                <div class="explanation">
+
+                    <h3>How it works</h3>
+
+                    <p>
+                        The <code>color</code> property changes the
+                        color of text, while
+                        <code>background-color</code> changes the
+                        background of an element.
+                    </p>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= EXAMPLES ================= -->
+
+    <section id="examples" class="examples-section">
+
+        <div class="section-heading">
+
+            <span class="section-label">VISUAL EXAMPLES</span>
+
+            <h2>CSS in Real Websites</h2>
+
+            <p>
+                CSS isn't just theory. These properties build
+                real interfaces.
+            </p>
+
+        </div>
+
+
+        <div class="example-grid">
+
+            <!-- CARD -->
+
+            <div class="example-card">
+
+                <div class="example-preview card-preview">
+
+                    <div class="mini-card">
+
+                        <div class="mini-avatar">
+                            👨‍💻
+                        </div>
+
+                        <div>
+                            <strong>Alex Morgan</strong>
+                            <span>Web Developer</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="example-info">
+
+                    <span>BOX MODEL</span>
+
+                    <h3>Cards</h3>
+
+                    <p>
+                        Padding, borders, radius and shadows.
+                    </p>
+
+                    <code>padding: 20px;</code>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FLEX -->
+
+            <div class="example-card">
+
+                <div class="example-preview flex-preview">
+
+                    <div class="flex-box">1</div>
+                    <div class="flex-box">2</div>
+                    <div class="flex-box">3</div>
+
+                </div>
+
+                <div class="example-info">
+
+                    <span>LAYOUT</span>
+
+                    <h3>Flexbox</h3>
+
+                    <p>
+                        Create flexible layouts with ease.
+                    </p>
+
+                    <code>display: flex;</code>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GRID -->
+
+            <div class="example-card">
+
+                <div class="example-preview grid-preview">
+
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+
+                </div>
+
+                <div class="example-info">
+
+                    <span>LAYOUT</span>
+
+                    <h3>CSS Grid</h3>
+
+                    <p>
+                        Build powerful two-dimensional layouts.
+                    </p>
+
+                    <code>display: grid;</code>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <div class="example-card">
+
+                <div class="example-preview button-preview">
+
+                    <button class="glow-button">
+                        Hover Me
+                    </button>
+
+                </div>
+
+                <div class="example-info">
+
+                    <span>INTERACTION</span>
+
+                    <h3>Hover Effects</h3>
+
+                    <p>
+                        Create interactive buttons using CSS.
+                    </p>
+
+                    <code>:hover</code>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PLAYGROUND ================= -->
+
+    <section id="playground" class="playground-section">
+
+        <div class="section-heading">
+
+            <span class="section-label">PRACTICE</span>
+
+            <h2>CSS Playground</h2>
+
+            <p>
+                Experiment with CSS and build your own components.
+            </p>
+
+        </div>
+
+
+        <div class="playground">
+
+            <div class="playground-editor">
+
+                <div class="playground-header">
+                    Your CSS
+                </div>
+
+                <textarea spellcheck="false">.my-button {
+  background: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}</textarea>
+
+            </div>
+
+
+            <div class="playground-result">
+
+                <div class="playground-header">
+                    Result
+                </div>
+
+                <div class="result-area">
+
+                    <button class="my-button">
+                        My Button
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CHEATSHEET ================= -->
+
+    <section id="cheatsheet" class="cheatsheet-section">
+
+        <div class="section-heading">
+
+            <span class="section-label">QUICK REFERENCE</span>
+
+            <h2>CSS Cheatsheet</h2>
+
+        </div>
+
+
+        <div class="cheatsheet">
+
+            <div class="cheat-row cheat-head">
+
+                <span>Property</span>
+                <span>Example</span>
+                <span>Purpose</span>
+
+            </div>
+
+
+            <div class="cheat-row">
+
+                <code>color</code>
+                <code>color: red;</code>
+                <span>Text color</span>
+
+            </div>
+
+
+            <div class="cheat-row">
+
+                <code>background</code>
+                <code>background: blue;</code>
+                <span>Element background</span>
+
+            </div>
+
+
+            <div class="cheat-row">
+
+                <code>font-size</code>
+                <code>font-size: 20px;</code>
+                <span>Text size</span>
+
+            </div>
+
+
+            <div class="cheat-row">
+
+                <code>margin</code>
+                <code>margin: 20px;</code>
+                <span>Outer spacing</span>
+
+            </div>
+
+
+            <div class="cheat-row">
+
+                <code>padding</code>
+                <code>padding: 20px;</code>
+                <span>Inner spacing</span>
+
+            </div>
+
+
+            <div class="cheat-row">
+
+                <code>display</code>
+                <code>display: flex;</code>
+                <span>Layout system</span>
+
+            </div>
+
+
+            <div class="cheat-row">
+
+                <code>border-radius</code>
+                <code>border-radius: 10px;</code>
+                <span>Rounded corners</span>
+
+            </div>
+
+
+            <div class="cheat-row">
+
+                <code>box-shadow</code>
+                <code>box-shadow: 0 5px 20px #0002;</code>
+                <span>Element shadow</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            CSS<span>Lab</span>
+        </div>
+
+        <p>
+            Learn CSS. Build websites. Understand the web.
+        </p>
+
+        <div class="footer-links">
+            <a href="#learn">Learn</a>
+            <a href="#examples">Examples</a>
+            <a href="#playground">Playground</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 CSS Lab. Built for learning.
+        </div>
+
+    </footer>
+
+  </body>
 </html>
